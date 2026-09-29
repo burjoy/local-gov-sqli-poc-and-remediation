@@ -1,4 +1,4 @@
-# Penetration Testing PoC and Portfolio — Luqman Hadi
+# SQLi PoC and Lab — Luqman Hadi
 
 > **Authorized assessments only.** All client work shown here is anonymized and
 > redacted. The `lab/` application is **intentionally vulnerable** and must only
