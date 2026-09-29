@@ -1,0 +1,6 @@
+# Sanitized lab screenshots go here.
+# Recommended captures:
+#   1. The benign sticker response.
+#   2. The UNION payload response showing the demo username + bcrypt hash.
+#   3. The terminal running the PoC script.
+# Remove/blank any hostnames, IPs, or paths before committing.
