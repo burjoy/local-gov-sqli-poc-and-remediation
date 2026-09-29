@@ -1,0 +1,9 @@
+# Lab runtime data (sqlite db generated on first run)
+lab/vulnerable-app/data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
