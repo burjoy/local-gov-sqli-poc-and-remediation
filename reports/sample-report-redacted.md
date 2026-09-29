@@ -64,7 +64,8 @@ Raw `/.git/HEAD` response:
 
 Redacted secrets from dumped git:
 
-<img width="735" height="220" alt="SS Proof git dumper" src="https://github.com/user-attachments/assets/7779f4f0-0361-41b0-b690-9446394b822c" />
+<img width="735" height="220" alt="SS Proof git dumper" src="https://github.com/user-attachments/assets/be879f97-aa23-422a-8998-a4cdce0be471" />
+
 
 
 **Impact.** Full source, keys, and internal-service credentials exposed; enables
