@@ -4,7 +4,7 @@
 > redacted. The `lab/` application is **intentionally vulnerable** and must only
 > ever be run locally. See [DISCLAIMER.md](DISCLAIMER.md).
 
-Offensive-security portfolio: web application penetration testing, vulnerability
+Offensive-security PoC and lab: web application penetration testing, vulnerability
 research, root-cause analysis, and professional reporting.
 
 ## Skills demonstrated
@@ -13,8 +13,6 @@ research, root-cause analysis, and professional reporting.
 |---|---|---|
 | SQL injection | Pre-auth UNION-based, error-based, table-name injection | [writeup](writeups/2025-01-gov-asset-app-sqli.md), [lab](lab/) |
 | Source / secret disclosure | Exposed `.git`, secret recovery, credential pivot | [writeup](writeups/2025-01-git-exposure-chain.md) |
-| Broken access control | Unauthenticated controllers, missing authz, IDOR | [writeup](writeups/2025-01-git-exposure-chain.md) |
-| Web misconfiguration | Debug mode in prod, error/SQL leakage | [writeups/](writeups/) |
 | Recon & enumeration | Directory brute force, endpoint mapping | [methodology/recon.md](methodology/recon.md) |
 | Reporting | CVSS v3.1, CWE/OWASP mapping, remediation | [reports/](reports/) |
 
