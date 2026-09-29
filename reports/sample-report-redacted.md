@@ -55,8 +55,13 @@ and hard-coded internal file-service credentials committed to the repository.
 **Steps to reproduce.** `curl <target>/.git/HEAD` returns `200 OK`, then
 `git-dumper <target>/.git ./dump` recovers the tree.
 
-**Evidence.** Appendix A (raw `/.git/HEAD` response); Appendix C (redacted
-secrets).
+**Evidence.**: 
+Raw `/.git/HEAD` response
+<img width="745" height="68" alt="SS Proof Curl  git" src="https://github.com/user-attachments/assets/62049dcb-82ad-4eda-be38-7ae142e40446" />
+
+Redacted secrets from dumped git
+<img width="735" height="220" alt="SS Proof git dumper" src="https://github.com/user-attachments/assets/7779f4f0-0361-41b0-b690-9446394b822c" />
+
 
 **Impact.** Full source, keys, and internal-service credentials exposed; enables
 every other finding and a potential internal pivot.
@@ -77,8 +82,10 @@ without parameterization; the controller's auth check is disabled.
 `user_login` in the HTML response. (Payload redacted; see private engagement
 records.)
 
-**Evidence.** Appendix D (redacted request/response); Appendix E (DB error
-reflecting the injected string).
+**Evidence.**: 
+Response from site after injection
+<img width="1919" height="1135" alt="SS Proof SQLi response" src="https://github.com/user-attachments/assets/ea356d04-5ea7-4a42-88e3-8c1a29bc968e" />
+
 
 **Impact.** Pre-auth read of the entire database, write/delete capability on
 asset records, and disclosure of account password hashes (bcrypt).
@@ -104,8 +111,3 @@ no credentials at any point.
 
 - `/.git/HEAD` and `/.git/config` return 403/404; all secrets rotated.
 - Injection payload returns a generic error with no injected data while unauthenticated.
-
-## Appendix index
-
-A – `/.git/HEAD` response · B – repo listing · C – redacted secrets ·
-D – SQLi request/response · E – DB error · F – tool logs · G – evidence hashes.
