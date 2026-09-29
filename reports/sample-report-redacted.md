@@ -56,10 +56,14 @@ and hard-coded internal file-service credentials committed to the repository.
 `git-dumper <target>/.git ./dump` recovers the tree.
 
 **Evidence.**: 
-Raw `/.git/HEAD` response
-<img width="745" height="68" alt="SS Proof Curl  git" src="https://github.com/user-attachments/assets/62049dcb-82ad-4eda-be38-7ae142e40446" />
 
-Redacted secrets from dumped git
+Raw `/.git/HEAD` response:
+
+<img width="745" height="68" alt="SS Proof Curl  git" src="https://github.com/user-attachments/assets/150dbd77-b7b6-4e80-b5ff-881698be50df" />
+
+
+Redacted secrets from dumped git:
+
 <img width="735" height="220" alt="SS Proof git dumper" src="https://github.com/user-attachments/assets/7779f4f0-0361-41b0-b690-9446394b822c" />
 
 
@@ -83,7 +87,8 @@ without parameterization; the controller's auth check is disabled.
 records.)
 
 **Evidence.**: 
-Response from site after injection
+Response from site after injection:
+
 <img width="1919" height="1135" alt="SS Proof SQLi response" src="https://github.com/user-attachments/assets/ea356d04-5ea7-4a42-88e3-8c1a29bc968e" />
 
 
